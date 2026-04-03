@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bank Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>🌐 Online Banking System</h1>
+        <div class="nav-links">
+            <a href="#" onclick="showSection('account')">Account Management</a>
+            <a href="#" onclick="showSection('transactions')">Transactions</a>
+            <a href="#" onclick="showSection('loans')">Loans</a>
+            <a href="#" onclick="showSection('savings')">Savings</a>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="section" id="account-section">
+            <h2>Create Account</h2>
+            <input type="text" id="account-number" placeholder="Account Number">
+            <input type="text" id="holder-name" placeholder="Holder Name">
+            <input type="password" id="password" placeholder="Password">
+            <label>Account Type:</label>
+            <select id="account-type">
+                <option value="regular">Regular</option>
+                <option value="savings">Savings</option>
+            </select>
+            <button onclick="createAccount()">Create Account</button>
+            <h3>Already have an account? Check Balance:</h3>
+            <input type="text" id="login-account-number" placeholder="Account Number">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="checkBalance()">Check Balance</button>
+        </div>
+
+        <div class="section" id="transactions-section">
+            <h2>Transactions</h2>
+            <input type="text" id="transaction-account" placeholder="Account Number">
+            <input type="password" id="transaction-password" placeholder="Password">
+            <input type="number" id="amount" placeholder="Enter Amount">
+            <button onclick="depositMoney()">Deposit</button>
+            <button onclick="withdrawMoney()">Withdraw</button>
+        </div>
+
+        <div class="section" id="loans-section">
+            <h2>Loan Management</h2>
+            <input type="text" id="loan-account" placeholder="Account Number">
+            <input type="password" id="loan-password" placeholder="Password">
+            <input type="number" id="loan-amount" placeholder="Loan Amount">
+            <input type="number" id="loan-term" placeholder="Loan Term (Months)">
+            <button onclick="takeLoan()">Take Loan</button>
+            <button onclick="payLoan()">Pay Loan</button>
+        </div>
+
+        <div class="section" id="savings-section">
+            <h2>Savings Interest Calculation</h2>
+            <input type="text" id="savings-account" placeholder="Account Number">
+            <input type="password" id="savings-password" placeholder="Password">
+            <input type="number" id="savings-years" placeholder="Years">
+            <button onclick="calculateSavings()">Calculate Savings Interest</button>
+        </div>
+
+        <div class="response" id="response"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

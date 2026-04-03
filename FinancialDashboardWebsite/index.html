@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BAJWAS - Sales Analysis Dashboard</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--  to nsvigate different webpagaes of the website  -->
+        <div class="navbar " >
+            <div class = "logo  ">
+                <img src= "../images/logo.svg"  style= "width: 20%;   
+                height: 20%;">
+
+                <h1 class="DSpro">BajwaSales</h1>
+            </div>
+            <div  >
+                <ul  class="links ">
+                    <li> <a href="index.html" class= "  clicknavlink">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a  href =" products.html">Products</a></li>
+                    <li ><a href= "services.html">Services</a></li>
+                    <li><a  href="signup.html " class=" SUbtn">Sign Up</a></li>
+                </ul>
+            </div>                 
+        </div>
+
+            <!-- firt intro sec with popup,  -->
+        <div class= "intropart  ">
+            <div></div>
+            <div class=" hookline">
+                <p class="hooklinefont ">Bajwa can help visualize your sales anywhere anytime</p>
+                
+                <p class =" subhook">we can predict future sales based on your current sales and other information. Your information - our results. Try free for the first 14 days</p>
+                <a class="websitedemo " onclick=" showDemoPopup() ">Get Free Demo</a>
+            </div>
+
+            <div class="mainimg">
+                <img src= "../images/mainIndex.jpg"class="introimg1">
+            </div>
+        </div>
+        </div>
+
+        <!-- the charts and grphs section for my webapge -->
+        <div class="Graohsection ">
+            <p class="section-title">how we annalyze your information</p>
+
+            <div class="graphBody">
+                <div class="cardfprcharts">
+                    <p class="graphTitle ">your income Growth</p>
+                    <div class="graphkibody">
+                        <!-- <canvas id="revenueChart"></canvas> -->
+                         <img src="../images/salesgraph.png" style="width: 100%; height: 100%;">
+                    </div>
+                    <p class="desc ">we can track your income from months to months and converit them into meanigful data</p>
+                </div>
+                <div class=" cardfprcharts">
+                    <p class="graphTitle">Sales by region</p>
+                    <div class="graphkibody">
+                        <!-- <canvas id="regionChart"></canvas> -->
+                         <img src="../images/piechart.png"style="width: 100%; height: 100%;">
+                    </div>
+                    <p class="desc">Analyze sales performance across different geographical regions.</p>
+                </div>
+                <div class="cardfprcharts">
+                    <p class="graphTitle">Product performance</p>
+                    <div class="graphkibody">
+                        <!-- <canvas id="productChart"></canvas> -->
+                         <img src="../images/barchart.png" style="width: 100%; height: 100%;">
+                    </div>
+                    <p class="desc">Identify your top-performing products and optimize your inventory.</p>
+                </div>
+                </div>
+        </div>
+
+        <!-- shpwing my website features that we will privide to users -->
+        <div class="webfeatures">
+            <p class="section-title">unique features to choose us 
+
+            </p>
+            <div class=" WFcontainer">
+                <div class="singlewf" >
+                    <img src="../images/logo.svg" style="width: 50%;">
+                    <p  class="wftitle">Real time Data</p>
+
+                    <p class="wfbody" >we can process all your data in real time without any lag and overheads</p>
+                </div>
+
+
+                <div  class=" singlewf">
+                    <img src="../images/logo.svg" style="width: 50%;">
+
+                    <p  class="wftitle ">Ai based prediction</p>
+                    <p class =" wfbody">we can predict your future sales with our new AI model</p>
+                </div>
+
+
+                <div class="singlewf ">
+                    <img src="../images/logo.svg" style="width: 50%;">
+
+                    <p class="wftitle ">cool dashboards</p>
+                    <p class=" wfbody">you can come and create your own dashboard as per your own sale needs</p>
+                </div>
+
+
+                <div class=" singlewf ">
+                    <img src="../images/logo.svg" style="width: 50%;">
+
+                    <p class="wftitle ">Easy Integration</p>
+                    <p  class="wfbody">you can easily intergrate our tool with any platform and computer systems</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- my governers  wala section   -->
+        <div class="governer webfeatures">
+            <p  class="section-title bog">Board of Governers</p>
+            <p class= "govsubtest ">The minds that made this platoform</p>
+            
+            <div class="govcontainer   " >
+                <div class="govCard ">
+                    <div class="  gov-image ">
+                        <img src="../images/ahmad.jpg" class="govimagespecs">
+                        
+                    </div>
+                    <p class="card-name">Ahmad Sattar</p>
+                    <p class="card-title">CEO & Co-Founder</p>
+                    <p class="card-description">He has over 15 yars of experience in IT and sales while he has a lot of passion to change the sales industry.</p>
+                </div>
+                
+                <div class="govCard">
+                    <div class="gov-image">
+                        <img src="../images/saad.jpg"  class="govimagespecs">
+
+                    </div>
+                    <p class="card-name">Saad salman</p>
+                    <p class="card-title">CTO & Co-Founder</p>
+                    <p class="card-description">he is the head of data science department of our company with great skills in this field</p>
+                </div>
+                
+                <div class="govCard">
+                    <div class="gov-image">
+                        <img src="../images/aali.jpg"  class="govimagespecs">
+
+                    </div>
+                    <p class="card-name">Aali Tauqeer</p>
+                    <p class="card-title">Head of Customer Success</p>
+                    <p class="card-description">He is responsible for dealing with all the customer queires and their questions while assisting them to use this platofrm</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- motivation values for paltform -->
+        <div class="mvaues">
+            <p class="section-title">values that guide us</p>
+
+            <div class="mvContainer">
+                <div class="mvcards">
+                    <div class="mvImg">
+                        <img src="../images/innovation.png"class="mvICON">
+
+                    </div>
+                    <div>
+                        <p class="mvTitle">Innovation</p>
+                        <p class="mvtxt">We continuously push the boundaries of what's possible in sales analytics, developing new features and capabilities that keep our clients ahead of the curve.</p>
+                    </div>
+                </div>
+                
+                <div class="mvcards">
+                    <div class="mvImg">
+                        <img src="../images/integriti.png" class="mvICON">
+                    </div>
+                    <div >
+                        <p class="mvTitle">Integrity</p>
+                        <p class="mvtxt">We believe in transparent, ethical business practices and are committed to maintaining the highest standards of data security and privacy.</p>
+                    </div>
+                </div>
+                
+                <div class="mvcards">
+                    <div class="mvImg">
+                        <img src="../images/customer.png" class="mvICON">
+                    </div>
+                    <div >
+                        <p class="mvTitle">Customer Focus</p>
+                        <p class="mvtxt">Our clients' success is our success. We listen to their needs, respond to their feedback, and continuously improve our platform to better serve them.</p>
+                    </div>
+                </div>
+                
+                <div class="mvcards">
+                    <div class="mvImg">
+                        <img src="../images/excellence.png" class="mvICON">
+                    </div>
+                    <div >
+                        <p class="mvTitle">Excellence</p>
+                        <p class="mvtxt">We strive for excellence in everything we do, from the quality of our analytics to the responsiveness of our customer support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- reviews from the clints  -->
+        <div class="clientReview">
+            <p class="section-title">Reviews from our clients</p>
+            <!-- <div> -->
+                <div class="CRcard">
+                    <p class="CRtext">"this has turned out to be one of the best platforms. it turned me into a millionare within one night"</p>
+                    <div class="aboutClient">
+                        <img src="../images/bajwa.jpg"  class="client-img">
+                        <div>
+                            <h4 class="client-name">Abdul Rehman Bajwa</h4>
+                            <p class="client-position">New user 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="CRcard">
+                    <p class="CRtext">"this totally changed my business growth and now i am seeling way more than i did before. Totally suggest this platofrm to others"</p>
+                    <div class="aboutClient">
+                        <img src="../images/ahmad.jpg"  class="client-img">
+                        <div >
+                            <h4 class="client-name">Ahmad sattar</h4>
+                            <p class="client-position">Top reated user</p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- </div> -->
+
+        </div>
+
+        <!-- make the users get started with platform section -->
+        <div class="getStarted">
+            <p class="GStitle">Are you ready to join us? </p>
+            <p class="GStxt">Not sure? you can start free for the first month</p>
+            <a href="signup.html" class="SUbtn">Start Your Free Trial</a>
+        </div>
+
+        <!-- Footer Section -->
+            <div class="copyright-text">
+                <div class="footer-logo">
+                    <p class="footer-company">BajwaSales</p>
+                    <p class="footer-tagline">Unlock Your Sales Potential</p>
+                </div>
+                <p>&copy; 2025 BajwaSales. All rights reserved.</p>
+            </div>
+    </div>
+
+    <!-- the demo for users..popups section-->
+    <div id="demoPopup" class="popupcontainer   ">
+        <div class="    popup-content">
+            <span class= "close-btn" onclick="closePopup()">&times;</span>
+            <p class=" popup-title">Request a Free Demo</p>
+            <div class="demo-form  ">
+                <div class="form-group  ">
+                    <label for="name">Full Name
+
+                    </label>
+                    <input type="text" id="name"placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type ="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" placeholder="Enter your company name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel"  id="phone" placeholder=" Enter your phone number">
+                </div>
+                <a href="#" class="submit-btn" onclick="submitDemo()">Submit Request</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+</html> 
