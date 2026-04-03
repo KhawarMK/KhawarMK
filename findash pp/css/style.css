@@ -1,0 +1,242 @@
+/* 2632657 */
+:root {
+  --primary: #0c4b87;
+  --secondary: #0073e6;
+  --accent: #00a3e0;
+  --background: #f4f8fb;
+  --text-dark: #222;
+  --text-light: #fff;
+  --font-main: 'Open Sans', 'Segoe UI', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-main);
+  background: var(--background);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+main {
+  flex: 1;
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+  min-height: 60vh;
+}
+
+
+header, footer {
+  background: var(--primary);
+  color: var(--text-light);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+
+header {
+  background: linear-gradient(to right, #0c4b87, #0073e6);
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+    
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+  display: inline-block
+;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+nav a.active {
+  background: #e06800;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.logo {
+  height: 150px; 
+  width: auto;
+}
+
+
+
+.signup-form,
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.signup-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.signup-form button {
+  margin-top: 2rem;
+  width: 100%;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup-form button:hover {
+  background: var(--secondary);
+}
+
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.charts canvas {
+  width: 350px ; 
+  height: 250px ; 
+  max-width: 100%;
+  max-height: 250px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+}
+
+
+button {
+  background: var(--accent);
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background: var(--secondary);
+  transform: translateY(-3px);
+}
+
+
+section {
+  margin-bottom: 2rem;
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+.candidate-number {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #d70c0c;
+  background-color: #f0f0f0;
+  padding: 4px 10px;
+  border-radius: 4px;
+  z-index: 1000;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

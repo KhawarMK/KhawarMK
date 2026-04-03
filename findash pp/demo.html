@@ -1,0 +1,82 @@
+<!--2632657-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KPI Demo Calculator | FinanceHub</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <div class="candidate-number">Candidate Number: 2632657</div>
+  <header>
+    <img src="img/logo.png" alt="FinanceHub Logo" class="logo"/>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="demo.html" class="active">Demo KPI Calculator</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="signup-form fade-section">
+      <h1>Interactive KPI Calculator</h1>
+      <p>Enter your real data to calculate key financial performance indicators in real-time.</p>
+      <form id="kpiForm">
+        <label for="revenue">Total Revenue ($)</label>
+        <input type="number" id="revenue" required />
+
+        <label for="expenses">Total Expenses ($)</label>
+        <input type="number" id="expenses" required />
+
+        <label for="netProfit">Net Profit ($)</label>
+        <input type="number" id="netProfit" required />
+
+        <label for="totalAssets">Total Assets ($)</label>
+        <input type="number" id="totalAssets" required />
+
+        <label for="equity">Owner's Equity ($)</label>
+        <input type="number" id="equity" required />
+
+        <button type="submit">Calculate KPIs</button>
+      </form>
+
+      <div id="kpiResults" class="fade-section" style="margin-top:2rem;"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FinanceHub. Measure what matters.</p>
+  </footer>
+
+  <script>
+    document.getElementById("kpiForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const rev = parseFloat(document.getElementById("revenue").value);
+      const exp = parseFloat(document.getElementById("expenses").value);
+      const profit = parseFloat(document.getElementById("netProfit").value);
+      const assets = parseFloat(document.getElementById("totalAssets").value);
+      const equity = parseFloat(document.getElementById("equity").value);
+
+      const netMargin = ((profit / rev) * 100).toFixed(2);
+      const returnOnAssets = ((profit / assets) * 100).toFixed(2);
+      const debtRatio = (((assets - equity) / assets) * 100).toFixed(2);
+
+      document.getElementById("kpiResults").innerHTML = `
+        <h2>Your KPI Results</h2>
+        <ul>
+          <li><strong>Net Profit Margin:</strong> ${netMargin}%</li>
+          <li><strong>Return on Assets:</strong> ${returnOnAssets}%</li>
+          <li><strong>Debt Ratio:</strong> ${debtRatio}%</li>
+        </ul>
+      `;
+    });
+  </script>
+</body>
+</html>

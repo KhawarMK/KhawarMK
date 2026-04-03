@@ -16,6 +16,8 @@ Adding project Done Previously
 
 
 University map using BFS(with shortest path algo)--- python
+
 Front-End Financial Dashboard----- html,css and javascript
+
 Online Banking platform ------ python,SQllite
 
